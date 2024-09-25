@@ -1,0 +1,32 @@
+.container {
+  max-width: 800px;
+}
+
+.card {
+  border: 1px solid #ddd;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-group .btn {
+  margin-right: 5px;
+}
+
+.active {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-outline-success.active {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-outline-secondary.active {
+  background-color: #6c757d;
+  color: white;
+}

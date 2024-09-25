@@ -1,0 +1,95 @@
+/* Estilos globales para el nav */
+.header {
+  width: 100%;
+  background-color: #f8f9fa;
+  /* Fondo claro para la barra de navegación */
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 100%;
+  /* Asegura que ocupe todo el ancho de la pantalla */
+  padding-left: 0;
+  /* Elimina padding izquierdo del contenedor */
+  padding-right: 0;
+  /* Elimina padding derecho del contenedor */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* Alinea el logo a la izquierda y los enlaces a la derecha */
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  /* Ocupa el ancho completo de la pantalla */
+}
+
+.navbar-brand {
+  margin-right: auto;
+  /* Asegura que el logo quede completamente a la izquierda */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  /* Alinea los enlaces de navegación a la derecha */
+  flex-grow: 1;
+}
+
+.nav-item {
+  margin-left: 20px;
+  /* Espacio entre los elementos del menú */
+}
+
+.nav-link {
+  color: #000;
+  text-align: right;
+  /* Asegura que el texto esté alineado a la derecha */
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  /* Color al pasar el cursor sobre el enlace */
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  margin-left: 20px;
+  /* Espacio adicional para el botón de login */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Asegura que el menú colapsado quede alineado a la derecha en móviles */
+.navbar-collapse {
+  justify-content: flex-end;
+  /* Alinea los elementos del menú colapsado a la derecha */
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  /* Alinea el botón de colapso a la derecha en pantallas pequeñas */
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: block;
+    /* Muestra los elementos en bloque en lugar de flex */
+    text-align: right;
+    /* Alinea los enlaces a la derecha en pantallas pequeñas */
+  }
+
+  .nav-item {
+    margin-left: 0;
+    /* Elimina el margen entre los elementos del menú en pantallas pequeñas */
+  }
+}
