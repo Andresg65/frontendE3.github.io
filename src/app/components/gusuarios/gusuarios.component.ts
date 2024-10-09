@@ -13,17 +13,20 @@ interface Usuario {
   selector: 'app-gusuarios',
   templateUrl: './gusuarios.component.html',
   styleUrls: ['./gusuarios.component.css'],
-  standalone: true, // Agrega esta línea
+  standalone: true,
   imports: [CommonModule, FormsModule]
-
 })
 export class GusuariosComponent {
   filtro: string = '';
   usuarios: Usuario[] = [
     { nombre: 'Juan Pérez', cargo: 'Gerente', identificacion: '123456', activo: true },
     { nombre: 'Ana Gómez', cargo: 'Desarrolladora', identificacion: '654321', activo: false },
+    { nombre: 'Camilo Obando', cargo: 'Desarrollador', identificacion: '235256', activo: true },
+    { nombre: 'Oscar Guio', cargo: 'Analista QA', identificacion: '48585', activo: false },
+    { nombre: 'Juan Suarez', cargo: 'Lead QA', identificacion: '235646', activo: true },
+    { nombre: 'Jose Moyano', cargo: 'Analista Procesos', identificacion: '263773636', activo: true },
+    { nombre: 'Ana Roa', cargo: 'Director', identificacion: '654321', activo: false },
   ];
-usuario: any;
 
   get usuariosFiltrados(): Usuario[] {
     return this.usuarios.filter(usuario =>
